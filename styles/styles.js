@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.lightdark,
-    paddingVertical: 25,
-    paddingHorizontal: 10
+    paddingVertical: 20,
+    paddingHorizontal: 25
   },
   titleContainer: {
     flex: 1,
@@ -16,20 +16,24 @@ export const styles = StyleSheet.create({
   },
   titleStyle: {
     color: colors.white,
-    fontSize: 19,
-    fontWeight: 500
+    fontSize: 19
   },
   bookListBtn: {
+    backgroundColor: colors.darkgreen,
     height: 35,
     width: 155,
     borderRadius: 20,
-    backgroundColor: colors.darkgreen,
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    position: 'absolute',
+    right: 0,
+    margin: 25,
+    bottom: 0
   },
   bookListTxtBtn: {
     color: colors.white,
-    fontSize: 15
+    fontSize: 15,
+    fontWeight: 500
   }
 });
