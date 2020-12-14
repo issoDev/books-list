@@ -35,5 +35,29 @@ export const styles = StyleSheet.create({
     color: colors.white,
     fontSize: 15,
     fontWeight: 500
+  },
+
+  // CircleButton.js StyleSheet
+  circleBtnStyle: {
+    height: 35,
+    width: 35,
+    borderRadius: 50,
+    backgroundColor: colors.darkgreen,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  circleTxtBtn: {
+    fontSize: 22,
+    fontWeight: 600,
+    color: colors.white,
+    position: 'absolute',
+    top: 0
+  },
+
+  // Header.js StyleSheet
+  headerContainer: {
+    height: '10%',
+    alignItems: 'flex-end'
   }
+
 });
