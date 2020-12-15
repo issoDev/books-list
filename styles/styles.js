@@ -58,6 +58,16 @@ export const styles = StyleSheet.create({
   headerContainer: {
     height: '10%',
     alignItems: 'flex-end'
+  },
+
+  // AddingBook.js StyleSheet
+  addBtnContainer: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    alignItems: 'flex-end',
+    paddingRight: 25,
+    paddingBottom: 20
   }
 
 });

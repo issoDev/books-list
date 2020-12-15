@@ -7,7 +7,9 @@ import CircleButton from './CircleButton'
 export default function Header() {
   return (
     <View style={styles.headerContainer}>
-      <CircleButton title="x" />
+      <CircleButton 
+        title="x"
+      />
     </View>
   )
 }
