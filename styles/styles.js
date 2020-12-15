@@ -56,7 +56,6 @@ export const styles = StyleSheet.create({
   // Header.js StyleSheet
   headerContainer: {
     paddingTop: 20,
-    paddingHorizontal: 25,
     alignItems: 'flex-end',
     justifyContent: 'center',
   },
@@ -84,7 +83,32 @@ export const styles = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 15,
     marginVertical: 10
-  }
+  },
 
+  // Book.js StyleSheet
+  bookCardContainer: {
+    paddingTop: 30
+  },
+  bookCard: {
+    height: 65,
+    width: '100%',
+    backgroundColor: colors.darkgray,
+    borderRadius: 15,
+    padding: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  bookDetails: {
+    justifyContent: "center"
+  },
+  authorTxtStyle: {
+    color: colors.green,
+    fontWeight: "200"
+  },
+  titleTxtStyle: {
+    color: colors.white,
+    fontSize: 16,
+    fontWeight: "500"
+  }
 
 });
