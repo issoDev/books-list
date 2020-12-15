@@ -34,30 +34,30 @@ export const styles = StyleSheet.create({
   bookListTxtBtn: {
     color: colors.white,
     fontSize: 15,
-    fontWeight: 500
+    fontWeight: '500'
   },
 
   // CircleButton.js StyleSheet
   circleBtnStyle: {
-    height: 35,
-    width: 35,
+    height: 40,
+    width: 40,
     borderRadius: 50,
     backgroundColor: colors.darkgreen,
     justifyContent: 'center',
     alignItems: 'center'
   },
   circleTxtBtn: {
-    fontSize: 22,
-    fontWeight: 600,
+    fontSize: 16,
     color: colors.white,
     position: 'absolute',
-    top: 0
+    top: 8
   },
 
   // Header.js StyleSheet
   headerContainer: {
-    height: '10%',
-    alignItems: 'flex-end'
+    height: '12%',
+    alignItems: 'flex-end',
+    justifyContent: 'center',
   },
 
   // AddingBook.js StyleSheet
@@ -68,6 +68,22 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-end',
     paddingRight: 25,
     paddingBottom: 20
+  },
+  textInputContainer: {
+    alignItems: 'center',
+    marginTop: 100
+  },
+  bookInput: {
+    borderWidth: 1,
+    borderColor: 1,
+    height: 45,
+    width: '95%',
+    backgroundColor: colors.white,
+    borderRadius: 8,
+    paddingLeft: 10,
+    fontSize: 15,
+    marginVertical: 10
   }
+
 
 });

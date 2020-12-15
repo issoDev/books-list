@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <View style={styles.headerContainer}>
       <CircleButton 
-        title="x"
+        title="❌"
       />
     </View>
   )

@@ -19,7 +19,7 @@ export default function CircleButton({ title }) {
         style={styles.circleBtnStyle}
         onPress={() => nav()}
       >
-        <Text style={styles.circleTxtBtn}> {title} </Text>
+        <Text style={styles.circleTxtBtn}>{title}</Text>
       </TouchableOpacity>
       
     </View>
