@@ -7,7 +7,8 @@ import { Entypo } from '@expo/vector-icons';
 export default function Book({ title, author }) {
   return (
     <View style={styles.bookCardContainer}>
-      <TouchableOpacity>
+      <TouchableOpacity 
+      >
         <View style={styles.bookCard}>
           <View style={styles.bookDetails}>
             <Text style={styles.authorTxtStyle}> hello </Text>
