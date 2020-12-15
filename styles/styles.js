@@ -1,14 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StatusBar, Platform, StyleSheet } from 'react-native';
 import colors from './colors'
 
 export const styles = StyleSheet.create({
-  // BookList.js StyleSheet
   container: {
     flex: 1,
     backgroundColor: colors.lightdark,
     paddingVertical: 20,
-    paddingHorizontal: 25
+    paddingHorizontal: 25,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
+  // BookList.js StyleSheet
   titleContainer: {
     flex: 1,
     justifyContent:'center',
@@ -55,7 +56,7 @@ export const styles = StyleSheet.create({
 
   // Header.js StyleSheet
   headerContainer: {
-    height: '15.5%',
+    paddingTop: 20,
     alignItems: 'flex-end',
     justifyContent: 'center',
   },

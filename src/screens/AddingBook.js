@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, TextInput } from 'react-native';
+import { SafeAreaView, Platform, StatusBar, View, TextInput } from 'react-native';
 
 import { styles } from '../../styles/styles';
 import CircleButton from '../components/CircleButton';
@@ -10,12 +10,12 @@ export default function AddingBook() {
   const [bookAuthor, setBookAuthor] = useState('');
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Header />
       <View style={styles.textInputContainer}>
       <TextInput 
         style={styles.bookInput}
-        placeholder="Add a book title here"
+        placeholder="Add a book title"
         value={bookTitle}
         onChangeText={titleText => setBookTitle(titleText)}
         autoCapitalize="none"
@@ -23,7 +23,7 @@ export default function AddingBook() {
       />
       <TextInput 
         style={styles.bookInput}
-        placeholder="Add the author of the book here"
+        placeholder="Add author's book"
         value={bookAuthor}
         onChangeText={authorText => setBookAuthor(authorText)}
         autoCapitalize="none"
@@ -37,6 +37,6 @@ export default function AddingBook() {
           disabled={bookTitle === '' ? true : false}
         />
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
