@@ -10,13 +10,6 @@ export default function BookList({ navigation }) {
     { id: Date.now().toString() + 1, title: 'Le petit prince', author: 'Antoine de Saint-Exupéry' }
   ]);
 
-  const addBook = (title, author) => {
-    setBooks(prevBooks => [...prevBooks, {
-      id: Date.now().toString(),
-      title,
-      author
-    }])
-  }
 
   const showContent = () => {
     if(books.length === 0) {
@@ -48,7 +41,7 @@ export default function BookList({ navigation }) {
       { showContent() }
       <TouchableOpacity 
         style={styles.bookListBtn}
-        onPress={() => navigation.navigate("AddingBook", { addBook })}
+        onPress={() => navigation.navigate("AddingBook")}
       >
         <AntDesign name="plus" size={15} color="white" />
         <Text style={styles.bookListTxtBtn}> add a new book </Text>

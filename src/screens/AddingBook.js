@@ -5,10 +5,10 @@ import { styles } from '../../styles/styles';
 import CircleButton from '../components/CircleButton';
 import Header from '../components/Header';
 
-export default function AddingBook() {
+export default function AddingBook({ addBook }) {
   const [bookTitle, setBookTitle] = useState('');
   const [bookAuthor, setBookAuthor] = useState('');
-
+  
   return (
     <SafeAreaView style={styles.container}>
       <Header />
