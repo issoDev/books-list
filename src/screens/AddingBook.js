@@ -9,8 +9,6 @@ export default function AddingBook() {
   const [bookTitle, setBookTitle] = useState('');
   const [bookAuthor, setBookAuthor] = useState('');
 
-  console.log(bookTitle, bookAuthor);
-
   return (
     <View style={styles.container}>
       <Header />
@@ -34,7 +32,10 @@ export default function AddingBook() {
       />
       </View>
       <View style={styles.addBtnContainer}>
-        <CircleButton title="➕" />
+        <CircleButton 
+          title="➕" 
+          disabled={bookTitle === '' ? true : false}
+        />
       </View>
     </View>
   )

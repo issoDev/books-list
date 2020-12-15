@@ -55,7 +55,7 @@ export const styles = StyleSheet.create({
 
   // Header.js StyleSheet
   headerContainer: {
-    height: '12%',
+    height: '15.5%',
     alignItems: 'flex-end',
     justifyContent: 'center',
   },
@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
   },
   textInputContainer: {
     alignItems: 'center',
-    marginTop: 100
+    marginTop: 125
   },
   bookInput: {
     borderWidth: 1,
