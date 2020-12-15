@@ -43,7 +43,6 @@ export const styles = StyleSheet.create({
     height: 40,
     width: 40,
     borderRadius: 50,
-    backgroundColor: colors.darkgreen,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -57,6 +56,7 @@ export const styles = StyleSheet.create({
   // Header.js StyleSheet
   headerContainer: {
     paddingTop: 20,
+    paddingHorizontal: 25,
     alignItems: 'flex-end',
     justifyContent: 'center',
   },
