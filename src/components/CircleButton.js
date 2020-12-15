@@ -14,7 +14,7 @@ export default function CircleButton({ title, disabled }) {
       : navigation.navigate("BookList")
   }
 
-  const addBtnColor = () => {
+  const addBtnBgColor = () => {
     return disabled 
       ? colors.lightgreen
       : colors.green
@@ -23,7 +23,7 @@ export default function CircleButton({ title, disabled }) {
   return (
     <View>
       <TouchableOpacity 
-        style={[styles.circleBtnStyle, { backgroundColor: addBtnColor() }]}
+        style={[styles.circleBtnStyle, { backgroundColor: addBtnBgColor() }]}
         disabled={disabled}
         onPress={() => nav()}
       >
