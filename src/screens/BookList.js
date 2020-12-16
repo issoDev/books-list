@@ -4,8 +4,6 @@ import { Text, View, TouchableOpacity, FlatList } from 'react-native';
 import { styles } from '../../styles/styles';
 import { AntDesign } from '@expo/vector-icons'; 
 import Book from '../components/Book';
-import { useSelector, useDispatch } from 'react-redux';
-import {  addBook, deleteBook } from '../reducer/store'
 
 export default function BookList({ navigation }) {
   const [books, setBooks] = useState([

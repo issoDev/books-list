@@ -11,8 +11,8 @@ export default function Book({ title, author }) {
       >
         <View style={styles.bookCard}>
           <View style={styles.bookDetails}>
-            <Text style={styles.authorTxtStyle}> hello </Text>
-            <Text style={styles.titleTxtStyle}> wolrd </Text>
+            <Text style={styles.authorTxtStyle}> {title} </Text>
+            <Text style={styles.titleTxtStyle}> {author} </Text>
           </View>
           <Entypo name="arrow-with-circle-right" size={24} color="white" />
         </View>
